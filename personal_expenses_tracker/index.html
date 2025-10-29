@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Personal Expense Tracker</h1>
+
+  <div class="input-section">
+    <input type="text" id="expense-name" placeholder="Enter expense name">
+    <input type="number" id="expense-amount" placeholder="Enter amount">
+    <select id="expense-type">
+      <option value="">Select type</option>
+      <option value="Food">Food</option>
+      <option value="Travel">Travel</option>
+      <option value="Bills">Bills</option>
+      <option value="Shopping">Shopping</option>
+      <option value="Others">Others</option>
+    </select>
+    <button id="add-expense">Add Expense</button>
+  </div>
+
+  <div class="expense-board">
+    <h2>Recent Expenses</h2>
+    <div id="expense-list" class="expense-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
